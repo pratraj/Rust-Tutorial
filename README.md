@@ -17,7 +17,15 @@ cargo new gcd
 
 **Tutorials**
 1. Greatest Common Divisor(GCD) using Euclid's algorithm (Method, Unit test) [**30/Aug/2024**]
-    on terminal$ cargo test
+    input -> 
+    ```console
+    cargo test
+    ```
+
+    output -> 
+    ```console
+    test test_gcd ... ok
+    ```
 2. Greatest Common Divisor(GCD) using Command line argument [**06/Sep/2024**]
 
    input ->
@@ -32,5 +40,9 @@ cargo new gcd
     ```console
     cargo run
     ```
-    output -> Usage: gcd number ...
+    output -> 
+    
+    ```console
+    Usage: gcd number ...
+    ```
 
