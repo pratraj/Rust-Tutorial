@@ -25,7 +25,7 @@ cargo new gcd
     ```
     output => The greatest common divisor of [42, 56] is 14
 
-    input terminal=>
+    input =>
     
     ```console
     cargo run
