@@ -17,16 +17,18 @@ cargo new gcd
 1. Greatest Common Divisor(GCD) using Euclid's algorithm (Method, Unit test) [**30/Aug/2024**]
     on terminal$ cargo test
 2. Greatest Common Divisor(GCD) using Command line argument [**06/Sep/2024**]
-    input terminal=>
+
+   input =>
+   
    ```console
     cargo run 42 56
     ```
-    output terminal=> The greatest common divisor of [42, 56] is 14
+    output => The greatest common divisor of [42, 56] is 14
 
     input terminal=>
     
     ```console
     cargo run
     ```
-    output terminal=> Usage: gcd number ...
+    output => Usage: gcd number ...
 
