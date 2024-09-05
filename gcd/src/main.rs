@@ -1,5 +1,10 @@
+use std::str::FromStr;
+use std::env;
+
+
 fn main() {
-    println!("Hello, world!");
+    //println!("Hello, world!");
+    gcd_by_cmd();
 }
 
 /*
@@ -25,6 +30,31 @@ fn gcd(mut m: u64, mut n: u64) -> u64 {
         m = m%n;
     }
     n
+}
+
+/*
+    Handling Command Line Arguments
+    author: Pratik Raj Srivastava,
+    date: 06/09/2024
+*/
+
+/// GCD function used for finding the greatest common divisor taking input from terminal
+fn gcd_by_cmd() {
+    let mut numbers = Vec::new();
+    for arg in env::args().skip(1) {
+        numbers.push(u64::from_str(&arg)
+                            .expect("error parsing argument"));
+    }
+    if numbers.len() == 0 {
+        eprintln!("Usage: gcd number ...");
+        std::process::exit(1);
+    }
+    let mut d = numbers[0];
+    for m in &numbers[1..] {
+        d = gcd(d, *m);
+    }
+
+    println!("The greatest common divisor of {:?} is {}", numbers, d);
 }
 
 /*
