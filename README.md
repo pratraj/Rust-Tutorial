@@ -45,4 +45,11 @@ cargo new gcd
     ```console
     Usage: gcd number ...
     ```
+3. Greatest Common Divisor(GCD) using Web Pages [**07/Sep/2024**]
+    ```console
+    [dependencies]
+    actix-web= "4"
+    serde = { version = "1.0", features = ["derive"] }
+    ```
+
 
