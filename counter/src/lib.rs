@@ -40,7 +40,7 @@ pub fn process_instruction(
             if counter_account.counter < args.value {
                 counter_account.counter = 0;
             } else {
-                counter_account.counter = counter_account.counter - args.value;
+                counter_account.counter -= args.value;
             }
         }
         CounterInstructions::Reset => {
